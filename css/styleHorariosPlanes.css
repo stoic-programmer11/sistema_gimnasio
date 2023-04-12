@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
-
 * {
   font-family: "Nunito", sans-serif;
   color: #fff;
@@ -13,6 +12,10 @@
   text-transform: capitalize;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+li{
+  list-style: none;
 }
 
 html {
@@ -100,7 +103,7 @@ section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 9%;
+  padding: 0 3%;
   z-index: 10000;
   background: #000;
 }
@@ -125,6 +128,43 @@ section {
 .header .navbar a:hover {
   background: #f00;
 }
+
+.menu{
+  display: flex;
+}
+
+/* submenu */
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+
+.submenu{
+	position: absolute;
+	background-color: rgba(101, 90, 90);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+  z-index: 1;
+}
+
+.submenu li a{
+	display: block;
+
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+    
 
 #menu-btn {
   font-size: 3rem;
@@ -809,7 +849,7 @@ section {
   .about .content .title {
     font-size: 3rem;
   }
-
+  
   .features .box-container .box.second {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -898,13 +938,13 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.info-costo {
+.info-costo{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.bloque-costo-total {
+.bloque-costo-total{
   background-color: white;
   margin-bottom: 20px;
   height: 50px;
@@ -917,13 +957,18 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
 }
 
+.cerrar-sesion{
+  padding-left: 60px;
+}
+
 
 /* ------------------DESDE AQUI ---------------------*/
 .contenedor-video {
   margin-top: 80px;
   /* background-color: lightblue; */
   height: auto;
-  width: auto;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   /* height: 800px;
@@ -932,7 +977,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .texto-video {
   position: absolute;
-  font-size: 80px;
+  font-size: 70px;
   align-self: center;
   color: black;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -943,7 +988,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 video{
-  width: 80%;
+  width: 100%;
 }
 
 table {
@@ -979,13 +1024,14 @@ table {
 td {
   text-align: left;
   padding: 8px;
-  border: 6px solid white;
+  border: 1px solid white;
 }
 
 .dias-dieta {
+  width: 400px;
   text-align: center;
   padding: 8px;
-  border: 6px solid white;
+  border: 1px solid white;
   color: #f00;
 }
 
@@ -1003,7 +1049,7 @@ td {
 .dias-entrenamiento {
   text-align: center;
   padding: 8px;
-  border: 6px solid white;
+  border: 1px solid white;
   color: #f00;
 }
 
@@ -1016,10 +1062,11 @@ td {
 
 
 .barra-botones {
-  margin: 28px 28px 0 28px;
+  margin-top: 20px;
+  margin-left: 80px;
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .filter-button {
@@ -1077,6 +1124,7 @@ td {
 }
 
 .text-image {
+  color: #fff;
   font-size: 25px;
   margin: 0 40px;
   margin-top: 10px;
@@ -1116,11 +1164,25 @@ td {
   margin-top: 50px;
 }
 
-/* .header {
-  background-color: gray;
-} */
+.color_texto{
+  color: #fff;
+}
 
-/* COMENTARIO */
+.separador{
+  width: 1000px;
+  height: 2px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.barra-perfil{
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+}
+
+/* ------------------HASTA AQUI ---------------------*/
+
 
 .navbar_right{
   /* background: blue; */
@@ -1300,10 +1362,5 @@ td {
 .check-icon:hover{
   filter: hue-rotate(120deg);
 }
-
-
-
-
-
 
 

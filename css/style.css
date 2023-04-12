@@ -776,6 +776,10 @@ section {
   color: #f00;
 }
 
+.cerrar-sesion{
+  padding-left: 60px;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -822,10 +826,18 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  .header .navbar a {
-    display: block;
-    font-size: 2rem;
+  
+  .navbar.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
   }
+
+  .cerrar-sesion{
+    padding-left: 0;
+  }
+
   .about {
     gap: 3rem;
   }
@@ -939,6 +951,3 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.cerrar-sesion{
-  padding-left: 60px;
-}

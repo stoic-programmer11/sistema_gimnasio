@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styleChat.css">
   <title>Entrenador Personal</title>
 
   <!-- FUENTES -->
@@ -14,12 +16,60 @@
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+  <script src="https://kit.fontawesome.com/e342c8a50b.js" crossorigin="anonymous"></script>
 
   <!-- CSS  -->
-  <link rel="stylesheet" href="./css/styleHorariosPlanes.css">
+  <link rel="stylesheet" href="css/styleHorariosPlanes.css" />
 </head>
 
 <body>
+  <div class="chatbox-wrapper">
+    <div class="chatbox-toggle">
+      <img src="images/centro-de-llamadas.png" alt="">
+    </div>
+    <div class="chatbox-message-wrapper">
+      <div class="chatbox-message-header">
+        <div class="chatbox-message-profile">
+          <img src="apoyo-tecnico.png" alt="" class="chatbox-message-image">
+          <div>
+            <h4 class="chatbox-message-name">Acesoramiento Online</h4>
+            <p class="chatbox-message-status">online</p>
+          </div>
+        </div>
+        <div class="chatbox-message-dropdown">
+          <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+          <ul class="chatbox-message-dropdown-menu">
+            <li>
+              <a href="#">Buscar</a>
+            </li>
+            <li>
+              <a href="#">Reportar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chatbox-message-content">
+        <h4 class="chatbox-message-no-message">Bienvenido al acesoramiento online!</h4>
+        <div class="chatbox-message-item received">
+          <span class="chatbox-message-item-text">
+            <b>Menu acesoramiento: </b>
+            <li><b>1.-</b> para solicitar un acesoramiento personalizado</li>
+            <li><b>2.-</b> para reclamos</li>
+          </span>
+          <span class="chatbox-message-item-time">08:30</span>
+        </div>
+      </div>
+      <div class="chatbox-message-bottom">
+        <form action="#" class="chatbox-message-form">
+          <textarea rows="1" placeholder=" Respuesta mensaje..." class="chatbox-message-input"></textarea>
+          <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="javascript/scriptChatOnline.js"></script>
 
 
   <!-- HEADER      -->
@@ -172,7 +222,7 @@
     </video>
   </div>
   <!-- TABLAS DIETA -->
-  <h1 class="titulo-horario">Horario de Alimentación</h1>
+  <h1 class="heading"><span>Horario plan de alimentacion</span></h1>
   <div class="contenedor-tabla">
     <div class="tabla-comidas">
       <table>
@@ -186,7 +236,7 @@
           <th class="dias-dieta">Sábado</th>
           <th class="dias-dieta">Domingo</th>
         </tr>
-        <tr>
+        <tr class="color_texto">
           <td>7:00 am</td>
           <td>Batido de proteína con espinacas y frutas</td>
           <td>Huevos revueltos con verduras</td>
@@ -196,7 +246,7 @@
           <td>Tostada de pan integral con aguacate y tomate</td>
           <td>Batido de proteína con espinacas y frutas</td>
         </tr>
-        <tr>
+        <tr class="color_texto">
           <td>10:00 am</td>
           <td>Yogurt griego con nueces y frutas frescas</td>
           <td>Batido de proteína con frutas y espinacas</td>
@@ -206,7 +256,7 @@
           <td>Frutas frescas con queso cottage</td>
           <td>Yogurt griego con nueces y frutas frescas</td>
         </tr>
-        <tr>
+        <tr class="color_texto">
           <td>1:00 pm</td>
           <td>Ensalada de pollo a la parrilla con vinagreta balsámica</td>
           <td>Ensalada de atún con aguacate y aceitunas</td>
@@ -216,7 +266,7 @@
           <td>Pechuga de pavo asada con ensalada verde</td>
           <td>Ensalada de pollo a la parrilla con vinagreta balsámica</td>
         </tr>
-        <tr>
+        <tr class="color_texto">
           <td>4:00 pm</td>
           <td>Batido de proteína con espinacas y frutas</td>
           <td>Palitos de zanahoria con hummus</td>
@@ -226,7 +276,7 @@
           <td>Manzana con mantequilla de almendras</td>
           <td>Batido de proteína con espinacas y frutas</td>
         </tr>
-        <tr>
+        <tr class="color_texto">
           <td>7:00 pm</td>
           <td>Salmón al orno con espárragos</td>
           <td>Pechuga de pollo a la parrilla con brócoli al vapor</td>
@@ -237,7 +287,7 @@
           <td>Salmón al horno con espárragos</td>
 
         </tr>
-        <tr>
+        <tr class="color_texto">
           <td>10:00 pm</td>
           <td>Batido de proteína con leche de almendras y frutas</td>
           <td>Yogurt griego con frutas y nueces</td>
@@ -251,9 +301,80 @@
     </div>
   </div>
 
+  <h1 class="heading"><span>Registra tu progreso</span></h1>
 
+  <section class="review">
+    <div class="information">
+      <span>Diario Informacion</span>
+      <h3>Registra tu informacion diaria de tu progreso</h3>
+      <p>
+        Registra diariamente tu informacion de progreso para que puedas ver tu progreso y asi poder mejorar tu rutina de ejercicios y plan de alimentacion.
+      </p>
+      <a href="diarioRegistroInformacion.php" class="btn">Registrar Ahora</a>
+    </div>
+
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <p>
+            Este dia me senti muy bien, me senti mas fuerte y con mas energia, me siento muy bien con mi rutina de ejercicios y mi plan de alimentacion.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Lunes</h3>
+              <span>3 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Martes tengo algunos problemas con mi rutina de ejercicios, pero me siento bien con mi plan de alimentacion, me siento mas fuerte y con mas energia.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Martes</h3>
+              <span>4 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Miercoles mi plan de alimentacion me esta costando ingerir las cantidades de alimentos que me recomiendan, pero me siento bien con mi rutina de ejercicios.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Miercoles</h3>
+              <span>5 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Jueves el dia de ejercicio de piernas me dejo cansado, no puedo mover bien las articulaciones de mis piernas, pero me siento bien con mi plan de alimentacion.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Jueves</h3>
+              <span>6 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- GALERIA DE IMAGENES -->
-  <h1>Menú de la Semana</h1>
+  <h1 class="heading"><span>Menu de la semana</span></h1>
+
+  <center>
+    <div class="separador"></div>
+  </center>
 
   <div class="barra-botones">
 
@@ -425,7 +546,7 @@
   <script src="js/scriptPlanesO.js"></script>
 
   <script src="./js/jquery.js"></script>
-  <script src="./js/notificaciones.js"></script>
+  <!-- <script src="./js/notificaciones.js"></script> -->
   <script>
     $(document).ready(function() {
       $(".barra-perfil").click(function() {

@@ -17,7 +17,7 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
-
+    <script src="https://kit.fontawesome.com/e342c8a50b.js" crossorigin="anonymous"></script>
     <!-- CSS  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,20 +25,24 @@
 
 
     <!-- HEADER      -->
-
     <header class="header">
       <a href="#" class="logo"> <span>SHAPE</span>FIT </a>
-
       <div id="menu-btn" class="fas fa-bars"></div>
-
-      <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#features">Beneficios</a>
-        <a href="#pricing">Precios</a>
-        <a href="#trainers">Entrenadores</a>
-        <a href="#blogs">Blogs</a>
-      </nav>
+      <ul class="navbar menu">
+        <li><a  href="#home">home</a></li>
+        <li><a  href="#about">about</a></li>
+        <li><a  href="#features">Beneficios</a></li>
+        <li><a  href="#pricing">Planes</a>
+            <ul class="submenu">
+                <li><a href="tabla_plan_entrenamiento.php">Entrenamiento</a></li>
+                <li><a href="tabla_perdidad_de_peso.php">Nutricional</a></li>
+            </ul>
+        </li>
+        <li><a  href="#trainers">Entrenadores</a></li>
+        <li><a  href="#blogs">Blogs</a></li></li>
+        <!-- icono iniciar sesion -->
+        <li  class="cerrar-sesion"><a href="paginaInicio.php"><i class="fa-solid fa-circle-user fa-lg" style="color: #fff;"></i>   iniciar Sesión</a></li>
+      </ul>                         
     </header>
 
     <!-- header section ends     -->

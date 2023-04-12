@@ -32,44 +32,29 @@
                                   
     </header>
   <div class="wrapper">
-    <section class="form signup">
+    <section class="form login">
       <header>Chat Asesoramiento</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
-        <div class="name-details">
-          <div class="field input">
-            <label>Nombre</label>
-            <input type="text" name="fname" placeholder="Nombre" required>
-          </div>
-          <div class="field input">
-            <label>Apellido</label>
-            <input type="text" name="lname" placeholder="Apellido" required>
-          </div>
-        </div>
         <div class="field input">
           <label>Correo electronico</label>
           <input type="text" name="email" placeholder="Correo electronico" required>
         </div>
         <div class="field input">
-          <label>Contranseña</label>
-          <input type="password" name="password" placeholder="Contranseña" required>
+          <label>Contraseña</label>
+          <input type="password" name="password" placeholder="Contraseña" required>
           <i class="fas fa-eye"></i>
         </div>
-        <div class="field image">
-          <label>Seleccionar imagen</label>
-          <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
-        </div>
         <div class="field button">
-          <input type="submit" name="submit" value="Continue to Chat">
+          <input type="submit" name="submit" value="Iniciar Chat">
         </div>
       </form>
-      <div class="link">Ya tienes cuenta? <a href="login.php" style="color: blue;">Iniciar Sesion ahora</a></div>
+      <div class="link">No tienes una cuenta? <a href="index.php" style="color: blue;">Registrate ahora</a></div>
     </section>
   </div>
-
-
+  
   <script src="javascript/pass-show-hide.js"></script>
-  <script src="javascript/signup.js"></script>
+  <script src="javascript/login.js"></script>
 
 </body>
 </html>

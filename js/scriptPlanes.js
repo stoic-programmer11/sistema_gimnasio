@@ -99,5 +99,3 @@ submitBtn.addEventListener('click', () => {
         })
  
 });
-
-

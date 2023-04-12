@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styleChat.css">
   <title>Entrenador Personal</title>
 
   <!-- FUENTES -->
@@ -15,15 +17,63 @@
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-
+  <script src="https://kit.fontawesome.com/e342c8a50b.js" crossorigin="anonymous"></script>
   <!-- CSS  -->
-  <link rel="stylesheet" href="./css/styleHorariosPlanes.css" />
+  <link rel="stylesheet" href="css/styleHorariosPlanes.css" />
 </head>
 
 <body>
 
+  <div class="chatbox-wrapper">
+    <div class="chatbox-toggle">
+      <img src="images/centro-de-llamadas.png" alt="">
+    </div>
+    <div class="chatbox-message-wrapper">
+      <div class="chatbox-message-header">
+        <div class="chatbox-message-profile">
+          <img src="apoyo-tecnico.png" alt="" class="chatbox-message-image">
+          <div>
+            <h4 class="chatbox-message-name">Acesoramiento Online</h4>
+            <p class="chatbox-message-status">online</p>
+          </div>
+        </div>
+        <div class="chatbox-message-dropdown">
+          <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+          <ul class="chatbox-message-dropdown-menu">
+            <li>
+              <a href="#">Buscar</a>
+            </li>
+            <li>
+              <a href="#">Reportar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chatbox-message-content">
+        <h4 class="chatbox-message-no-message">Bienvenido al acesoramiento online!</h4>
+        <div class="chatbox-message-item received">
+          <span class="chatbox-message-item-text">
+            <b>Menu acesoramiento: </b>
+            <li><b>1.-</b> para solicitar un acesoramiento personalizado</li>
+            <li><b>2.-</b> para reclamos</li>
+          </span>
+          <span class="chatbox-message-item-time">08:30</span>
+        </div>
+      </div>
+      <div class="chatbox-message-bottom">
+        <form action="#" class="chatbox-message-form">
+          <textarea rows="1" placeholder=" Respuesta mensaje..." class="chatbox-message-input"></textarea>
+          <button type="submit" class="chatbox-message-submit"><i class='bx bx-send'></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="javascript/scriptChatOnline.js"></script>
 
   <!-- HEADER      -->
+
 
   <header class="header">
     <a href="#" class="logo"> <span>BE</span>FIT </a>
@@ -166,14 +216,14 @@
   <!-- PARTE DEL VIDEO -->
   <div class="contenedor-video">
     <div class="texto-video">
-      <h2>Plan de entrenamiento</h2>
+      <h2>Plan entrenamiento</h2>
     </div>
     <video autoplay loop muted>
       <source src="videos/production ID_4065388.mp4">
     </video>
   </div>
   <!-- TABLAS DIETA -->
-  <h1>Dias de entrenamiento</h1>
+  <h1>Horario de entrenamiento</h1>
   <div class="contenedor-tabla">
     <div class="tabla-entrenamiento">
       <table>
@@ -189,7 +239,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="color_texto">
             <td>Pectorales</td>
             <td>Press de banca</td>
             <td>Fondos</td>
@@ -198,7 +248,7 @@
             <td>Cruce de cables</td>
             <td>Flexiones con agarre cerrado</td>
           </tr>
-          <tr>
+          <tr class="color_texto">
             <td>Espalda</td>
             <td>Dominadas</td>
             <td>Remo con mancuernas</td>
@@ -207,7 +257,7 @@
             <td>Remo invertido</td>
             <td>Jalones al pecho</td>
           </tr>
-          <tr>
+          <tr class="color_texto">
             <td>Hombros</td>
             <td>Press militar</td>
             <td>Elevaciones laterales</td>
@@ -216,7 +266,7 @@
             <td>Press arnold</td>
             <td>Press con mancuernas</td>
           </tr>
-          <tr>
+          <tr class="color_texto">
             <td>Bíceps</td>
             <td>Curl con mancuernas</td>
             <td>Curl con barra</td>
@@ -225,7 +275,7 @@
             <td>Curl con barra Z</td>
             <td>Curl concentrado con mancuernas</td>
           </tr>
-          <tr>
+          <tr class="color_texto">
             <td>Tríceps</td>
             <td>Extensiones de tríceps con mancuernas</td>
             <td>Fondos en paralelas</td>
@@ -234,7 +284,7 @@
             <td>Patada de burro con mancuernas</td>
             <td>Press de banca cerrado</td>
           </tr>
-          <tr>
+          <tr class="color_texto">
             <td>Piernas</td>
             <td>Sentadillas con barra</td>
             <td>Prensa de piernas</td>
@@ -243,7 +293,7 @@
             <td>Extensión de piernas en máquina</td>
             <td>Elevación de talones con mancuernas</td>
           </tr>
-          <tr>
+          <tr class="color_texto">
             <td>Abdominales</td>
             <td>Abdominales en bicicleta</td>
             <td>Crunches</td>
@@ -257,9 +307,76 @@
     </div>
   </div>
 
+  <h1 class="heading"><span>Registra tu progreso</span></h1>
 
+  <section class="review">
+    <div class="information">
+      <span>Diario Informacion</span>
+      <h3>Registra tu informacion diaria de tu progreso</h3>
+      <p>
+        Registra diariamente tu informacion de progreso para que puedas ver tu progreso y asi poder mejorar tu rutina de ejercicios y plan de alimentacion.
+      </p>
+      <a href="diarioRegistroInformacion.php" class="btn">Registrar Ahora</a>
+    </div>
+
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide">
+          <p>
+            Este dia me senti muy bien, me senti mas fuerte y con mas energia, me siento muy bien con mi rutina de ejercicios y mi plan de alimentacion.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Lunes</h3>
+              <span>3 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Martes tengo algunos problemas con mi rutina de ejercicios, pero me siento bien con mi plan de alimentacion, me siento mas fuerte y con mas energia.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Martes</h3>
+              <span>4 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Miercoles mi plan de alimentacion me esta costando ingerir las cantidades de alimentos que me recomiendan, pero me siento bien con mi rutina de ejercicios.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Miercoles</h3>
+              <span>5 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <p>
+            Jueves el dia de ejercicio de piernas me dejo cansado, no puedo mover bien las articulaciones de mis piernas, pero me siento bien con mi plan de alimentacion.
+          </p>
+          <div class="user">
+            <div class="info">
+              <h3>Jueves</h3>
+              <span>6 de abril 2023</span>
+            </div>
+            <i class="fas fa-quote-left"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- GALERIA DE VIDEOS -->
-  <h1>Rutinas de entrenamiento</h1>
+  <h1 class="heading"><span>Rutinas de entrenamiento semanal</span></h1>
 
   <div class="barra-botones">
 
@@ -383,7 +500,7 @@
   <!-- custom js file link  -->
   <script src="js/scriptPlanesO.js"></script>
   <script src="./js/jquery.js"></script>
-  <script src="./js/notificaciones.js"></script>
+  <!-- <script src="./js/notificaciones.js"></script> -->
   <script>
     $(document).ready(function() {
       $(".barra-perfil").click(function() {
