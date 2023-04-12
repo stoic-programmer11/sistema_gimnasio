@@ -51,10 +51,10 @@
               </div>
               <div class="notify_data">
                 <div class="title">
-                  Lorem, ipsum dolor.
+                  Alimentacion Dia Lunes
                 </div>
                 <div class="sub_title">
-                  Lorem ipsum dolor sit amet
+                  10-04-2023
                 </div>
               </div>
               <div class="notify_status">
@@ -68,10 +68,10 @@
               </div>
               <div class="notify_data">
                 <div class="title">
-                  Lorem, ipsum dolor.
+                  Rutina de Entrenamiento Lunes
                 </div>
                 <div class="sub_title">
-                  Lorem ipsum dolor sit amet
+                  10-04-2023
                 </div>
               </div>
               <div class="notify_status">
@@ -85,10 +85,10 @@
               </div>
               <div class="notify_data">
                 <div class="title">
-                  Lorem, ipsum dolor.
+                  Alimentacion Dia Martes
                 </div>
                 <div class="sub_title">
-                  Lorem ipsum dolor sit amet
+                  11-04-2023
                 </div>
               </div>
               <div class="notify_status">
@@ -103,10 +103,10 @@
               </div>
               <div class="notify_data">
                 <div class="title">
-                  Lorem, ipsum dolor.
+                  Rutina de Entrenamiento Martes
                 </div>
                 <div class="sub_title">
-                  Lorem ipsum dolor sit amet
+                  11-04-2023
                 </div>
               </div>
               <div class="notify_status">
@@ -121,10 +121,10 @@
               </div>
               <div class="notify_data">
                 <div class="title">
-                  Lorem, ipsum dolor.
+                  Alimentacion Dia Miercoles
                 </div>
                 <div class="sub_title">
-                  Lorem ipsum dolor sit amet
+                  12-04-2023
                 </div>
               </div>
               <div class="notify_status">
@@ -399,14 +399,6 @@
       });
     });
   </script>
-
-  <!-- <script>
-  $(document).ready(function() {
-    $(".boton-notificaciones").click(function() {
-      $(".notification_dd").toggle();
-    });
-  });
-</script> -->
 
 </body>
 

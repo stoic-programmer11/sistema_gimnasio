@@ -8,6 +8,8 @@
   <title>Entrenador Personal</title>
 
   <!-- FUENTES -->
+  <script src="https://kit.fontawesome.com/4607825de5.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -35,6 +37,127 @@
       <a href="#trainers">Entrenadores</a>
       <a href="#blogs">Blogs</a>
     </nav>
+
+    <div class="navbar_right">
+      <div class="notifications not-campana">
+        <div class="icon_wrap boton-notificaciones"><i class="far fa-bell"></i></div>
+
+        <div class="notification_dd">
+          <ul class="notification_ul">
+            <li class="starbucks success notificacion-individual">
+              <div class="notify_icon">
+                <img class="icon icon-a" src="./notification_images/icono-alimentacion.png"></img>
+              </div>
+              <div class="notify_data">
+                <div class="title">
+                  Alimentacion Dia Lunes
+                </div>
+                <div class="sub_title">
+                  10-04-2023
+                </div>
+              </div>
+              <div class="notify_status">
+                <img src="./notification_images/success-icon.png" alt="" class="check-icon">
+                <img src="./notification_images/failed-icon.png" alt="" class="check-icon">
+              </div>
+            </li>
+            <li class="baskin_robbins failed notificacion-individual">
+              <div class="notify_icon">
+                <img class="icon icon-e" src="./notification_images/icono-ejercicio.png"></img>
+              </div>
+              <div class="notify_data">
+                <div class="title">
+                  Rutina de Entrenamiento Lunes
+                </div>
+                <div class="sub_title">
+                  10-04-2023
+                </div>
+              </div>
+              <div class="notify_status">
+                <img src="./notification_images/success-icon.png" alt="" class="check-icon">
+                <img src="./notification_images/failed-icon.png" alt="" class="check-icon">
+              </div>
+            </li>
+            <li class="mcd success notificacion-individual">
+              <div class="notify_icon">
+                <img class="icon icon-a" src="./notification_images/icono-alimentacion.png"></img>
+              </div>
+              <div class="notify_data">
+                <div class="title">
+                  Alimentacion Dia Martes
+                </div>
+                <div class="sub_title">
+                  11-04-2023
+                </div>
+              </div>
+              <div class="notify_status">
+                <img src="./notification_images/success-icon.png" alt="" class="check-icon">
+                <img src="./notification_images/failed-icon.png" alt="" class="check-icon">
+              </div>
+            </li>
+            <li class="pizzahut failed notificacion-individual">
+              <div class="notify_icon">
+                <img class="icon icon-e" src="./notification_images/icono-ejercicio.png"></img>
+
+              </div>
+              <div class="notify_data">
+                <div class="title">
+                  Rutina de Entrenamiento Martes
+                </div>
+                <div class="sub_title">
+                  11-04-2023
+                </div>
+              </div>
+              <div class="notify_status">
+                <img src="./notification_images/success-icon.png" alt="" class="check-icon">
+                <img src="./notification_images/failed-icon.png" alt="" class="check-icon">
+              </div>
+            </li>
+            <li class="kfc success notificacion-individual">
+              <div class="notify_icon">
+                <img class="icon icon-a" src="./notification_images/icono-alimentacion.png"></img>
+
+              </div>
+              <div class="notify_data">
+                <div class="title">
+                  Alimentacion Dia Miercoles
+                </div>
+                <div class="sub_title">
+                  12-04-2023
+                </div>
+              </div>
+              <div class="notify_status">
+                <img src="./notification_images/success-icon.png" alt="" class="check-icon">
+                <img src="./notification_images/failed-icon.png" alt="" class="check-icon">
+              </div>
+            </li>
+            <!-- <li class="show_all notificacion-individual">
+              <p class="link">Show All Activities</p>
+            </li> -->
+          </ul>
+        </div>
+
+      </div>
+      <div class="profile perfil-derecho">
+        <div class="icon_wrap barra-perfil">
+          <img src="./notification_images/profile_pic.png" alt="profile_pic">
+          <span class="name">Simon</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="profile_dd">
+          <ul class="profile_ul">
+            <li class="profile_li"><a class="profile" href="#"><span class="picon icono-menu-flotante"><i class="fas fa-user-alt"></i>
+                </span>Profile</a>
+              <div class="btn">My Account</div>
+            </li>
+            <li><a class="address" href="#"><span class="picon icono-menu-flotante"><i class="fas fa-map-marker"></i></span>Address</a></li>
+            <li><a class="settings" href="#"><span class="picon icono-menu-flotante"><i class="fas fa-cog"></i></span>Settings</a></li>
+            <li><a class="logout" href="./PaginaInicio.php"><span class="picon icono-menu-flotante"><i class="fas fa-sign-out-alt"></i></span>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
 
   <!-- header section ends     -->
@@ -299,7 +422,25 @@
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
   <!-- custom js file link  -->
-  <script src="js/scriptPlanesO.js"></script> -->
+  <script src="js/scriptPlanesO.js"></script>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/notificaciones.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".barra-perfil").click(function() {
+        $(".profile_dd").toggle();
+      });
+
+      $(".boton-notificaciones").click(function() {
+        $(".notification_dd").toggle();
+      });
+
+      $(".check-icon").click(function() {
+        $(this).closest(".notificacion-individual").remove();
+      });
+    });
+  </script>
 </body>
 
 </html>
